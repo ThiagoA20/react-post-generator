@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pessoas>
+    <pessoa cpf="12345678900">
+        <nome>Thiago</nome>
+        <telefones>
+            <telefone>12394123434</telefone>
+            <telefone>12312432412</telefone>
+        </telefones>
+    </pessoa>
+    <pessoa cpf="12343278900">
+        <nome>Andrade</nome>
+        <telefones>
+            <telefone>12394153452</telefone>
+            <telefone>12312234234</telefone>
+        </telefones>
+    </pessoa>
+</pessoas>

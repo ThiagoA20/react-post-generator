@@ -1,5 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import time
+import build
 
 hostName = '0.0.0.0'
 serverPort = 8080
@@ -22,6 +23,10 @@ class MyServer(BaseHTTPRequestHandler):
             self.wfile.write(bytes(f"<p>Responses: {self.responses}</p>", "utf-8"))
             self.wfile.write(bytes(f"<p>Requestline: {self.requestline}</p>", "utf-8"))
             self.wfile.write(bytes("<body><p>This is an example webserver</p></body></html>", "utf-8"))
+        elif (self.path == "/"):
+            self.send_response(200)
+            self.end_headers()
+            self.wfile.write(b'backend_api/')
         else:
             self.send_response(404)
             self.send_header("Content-type", "text/html")
