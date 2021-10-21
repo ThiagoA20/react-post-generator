@@ -56,3 +56,33 @@ main {
     padding: 20px;
     font-size: 150%;
 }
+
+.gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(450px, 90%, 100vw);
+    height: 20vh;
+    margin: 20px;
+}
+
+.linear-gradient {
+    background-image: linear-gradient(to right top, #ff0707, #00eeff);
+}
+
+.radial-gradient {
+    background: radial-gradient(ellipse at right bottom, darkblue, transparent);
+}
+
+.text-gradient h1 {
+    font-size: 72px;
+    background-image: linear-gradient(to right, #eee, #12a);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.repeat-gradient {
+    background: repeating-linear-gradient(135deg, #12e, #ebf8e1 15%, #666 20%);
+}

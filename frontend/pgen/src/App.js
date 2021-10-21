@@ -52,6 +52,18 @@ function App() {
           <div class="box f">f</div>
           <div class="box g"></div>
         </div>
+        <div class="gradient linear-gradient">
+          <h1>Linear Gradient</h1>
+        </div>
+        <div class="gradient radial-gradient">
+          <h1>Radial Gradient</h1>
+        </div>
+        <div class="gradient text-gradient">
+          <h1>Text Gradient</h1>
+        </div>
+        <div class="gradient repeat-gradient">
+          <h1>Repeat Gradient</h1>
+        </div>
       </main>
     </div>
   );
