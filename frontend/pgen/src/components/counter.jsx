@@ -16,6 +16,7 @@ const Counter = () => {
 
     const darkTheme = useContext(ThemeContext)
     const themeStyles = {
+        width: 'clamp(200px, 50%, 1200px)',
         backgroundColor: darkTheme.dark ? "#333" : "#CCC",
         color: darkTheme.dark ? '#CCC' : "#333",
         padding: '2rem',
